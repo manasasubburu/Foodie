@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="view port" content="width=device-width, intial scale=1.0" />
+    <title>Foodie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Food<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#experts" onclick="toggleMenu();">Experts</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">contact us</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Good Food,Good Mood.</h2>
+        <a href="#" class="btn">Menu</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titleText"><span>A</span>bout us</h2>
+          <p>
+            Foodie is an indian multinational restaurant aggreator and the<br>
+            food delivery company founded by Manasa.s and team in 2020.<br>
+            Foodie provides information,menus and user-reviews of hotels<br>
+            as well as food devilery options from partner restaurants in select<br>
+            cities.<br /><br />
+            Wikipedia <br />
+            Founder:Manasa subburu and team <br />
+            Founded:may2020; <br />
+            Number of employees:5,000+<br />
+            Headquarters:Delhi,Haryana,India. <br />
+            Available in Languages:english,telugu,spanish ,...MORE
+          </p>
+        </div>
+
+        <div class="col50">
+          <div class="imgBx">
+            <img src="bg7.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <div class="title">
+        <h2 class="titleText">Our<span>M</span>enu</h2>
+        <p>Eat what makes you happy.</p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu1.jpg" />
+          </div>
+          <div class="text">
+            <h3>Special Salads</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu2.jpg" />
+          </div>
+          <div class="text">
+            <h3>burgers</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu3.jpg" />
+          </div>
+          <div class="text">
+            <h3>desserts</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu4.jpg" />
+          </div>
+          <div class="text">
+            <h3>curries</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu5.jpg" />
+          </div>
+          <div class="text">
+            <h3>tiffins</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="menu6.jpg" />
+          </div>
+          <div class="text">
+            <h3>special meals</h3>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <a href="#" class="btn">view all</a>
+      </div>
+    </section>
+    <section class="experts" id="experts">
+      <div class="title">
+        <h2 class="titleText">Our kitchen<span> E</span>xperts.</h2>
+        <p>Thank you for the love in our food.</p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="testi1.jpg" />
+          </div>
+          <div class="text">
+            <h3>Govind Ramsay</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="testi2.jpg" />
+          </div>
+          <div class="text">
+            <h3>Fieri singh</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="testi3.jpg" />
+          </div>
+          <div class="text">
+            <h3>Bobby Flay</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="testi4.jpg" />
+          </div>
+          <div class="text">
+            <h3>Rachael Ray</h3>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="title">
+          <h2 class="titleText"><span>C</span>ontact us </h2>
+          <p> Question not answered yet? we are here to help! </p>
+        </div>
+        <div class="ContactForm">
+          <h3>Send Message</h3>
+          <div class="inputBox">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="inputBox">
+          <textarea placeholder="Name"></textarea>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send">
+          </div>
+          </div>
+          </section>
+          <div class="copyrightText">
+            <p>Copyright 2020<a href="#"> Online tutorials</a>.All Rights Reserved</p>
+          </div>
+      <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+      function toggleMenu()
+      {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+      </script>
+  </body>
+</html>
